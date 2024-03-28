@@ -1,0 +1,36 @@
+@startuml
+class Account {
+    balance()
+    modify_funds()
+        id
+    name
+    rate
+    funds
+    __init__()
+}
+class Savings {
+    transaction()
+        limit
+    __init__()
+}
+class Checking {
+    transaction()
+        credit
+    __init__()
+}
+class Bank {
+    account_search()
+    setup()
+        __init__()
+}
+class BankSystem {
+    display_main_menu()
+    access_account()
+    account_operations()
+    initiate_system()
+        bank
+    __init__()
+}
+Account <|-- Savings
+Account <|-- Checking
+@enduml
